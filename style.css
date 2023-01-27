@@ -1,0 +1,265 @@
+body{
+   background-image: url(imagenes/background.jpg);
+   font-family: 'Patrick Hand', cursive;
+
+}
+header{
+    width: 100%;
+    height: 50px;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.logo-Fate{
+    margin-top: 15px;
+    margin-left: 15px;
+    
+}
+
+.titulo1{
+    position: absolute;
+    left: 250px;
+    top: 15px;
+    color: red;
+    font-size: 40px;
+    font-family: italic;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 18ch;
+    animation: typing 2s steps(18), blink .5s infinite step-end alternate;
+    overflow:hidden;
+    box-shadow: 0 0 3px red;
+    text-shadow: 0 0 15px red;
+}
+
+@keyframes typing {
+
+    from { width: 0}
+    }
+
+    @keyframes blink {
+     50% { border-color: transparent}
+    } 
+
+main{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Patrick Hand', cursive;
+}
+
+section{
+    width: 40%;
+    height: 100%;
+}
+
+.section1{
+    width: 70%;
+}
+
+.texto-area{
+    width: 80%;
+    height: 400px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    resize: none;
+    font-family: 'Patrick Hand', cursive;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: whitesmoke;
+    border: 2px solid red;
+    color: black;
+    border-radius: 15px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    box-shadow: 0 0 15px red;
+}
+
+::placeholder{
+    color: black;
+}
+
+.texto-area:focus{
+    outline: none;
+}
+
+.advertencia{
+    margin-top: -90px;
+    margin-left: 30px;
+    color: red;
+    text-shadow: 0 0 13px red;
+}
+
+.botones{
+    margin-top: 55px;
+    text-align: center;
+}
+
+.btn-encriptar{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: red;
+    color: black;
+    font-family: 'Patrick Hand', cursive;
+    cursor: pointer;
+}
+    .btn-encriptar:hover{
+        color: seashell;
+        border-color: #f5f4ed;
+        transform: scale(1.05);
+        box-shadow: 0 0 15px #f5f4ed;
+        text-shadow: 0 0 5px #f5f4ed;
+    }
+        .btn-encriptar:active{
+            color: transparent;
+        }
+
+.btn-desencriptar{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid red;
+    background-color: black;
+    color: red;
+    font-family: 'Patrick Hand', cursive;
+    cursor: pointer;
+}
+
+    .btn-desencriptar:hover{
+        color: white;
+        transform: scale(1.05);
+        border-color: #f5f4ed;
+        box-shadow: 0 0 15px #f5f4ed;
+    }
+        .btn-desencriptar:active{
+        color: transparent;
+         }
+
+.section2{
+    width: 32%;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: whitesmoke;
+    margin-right: 70px;
+    border-radius: 15px;
+    height: 600px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 1px solid red;
+    box-shadow: 0 0 15px red;
+}
+
+contenedor-icono{
+    width: 100%;
+    height: 10%;
+    margin-left: 100px;
+}
+
+.contenedor-titulo3{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+
+.contenedor-ingresa{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    position: relative;
+    top: -35px;
+    font-size: 17px;
+    color: black;
+}
+
+.contenedor-mensaje{
+    width: 100%;
+    height: 70%;
+    padding: 26px;
+    box-sizing: border-box;
+    font-family: 'Patrick Hand', cursive;
+    text-align: center;
+    color: black;
+}
+
+.titulo-mensaje{
+    color: darkred;
+    text-decoration: solid;
+}
+
+
+.textoEncriptado{
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.contendor-copiar{
+    width: 100%;
+    height: 70%;
+}
+
+.btn-copiar{
+    width: 200px;
+    height: 50px;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: red;
+    color: black;
+    font-family: 'Patrick Hand', cursive;
+    cursor: pointer;
+}
+    .btn-copiar:hover{
+        color: seashell;
+        transform: scale(1.05);
+        border-color: #f5f4ed;
+        box-shadow: 0 0 15px #f5f4ed;
+    }
+
+        .btn-copiar:active{
+        color: transparent;
+        }
+
+footer{
+    width: 100%;
+    height: auto;
+}
+
+.credits{
+    margin-top: 50px;
+    text-align: center;
+    color: red;
+}
+
+
+@media (max-width: 400px) {
+    .logo-Fate{
+        margin-top: 7px;
+    }
+    .titulo1{
+        font-size: 15px;
+        left: 105px;
+    }
+    .advertencia{
+        margin-top: -150px;
+    }
+    main{
+        flex-direction: column;
+    }
+    section{
+        flex-direction: column;
+    }
+    .section1{
+        width: 100%;
+    }
+    .botones{
+        width: 100%;
+    }
+    .section2{
+        width: 100%;
+        margin-top: 150px;
+    }
+}

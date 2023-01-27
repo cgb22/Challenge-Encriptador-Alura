@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel ="stylesheet" href="reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+        <title>Encriptador de Texto</title>
+    </head>
+    <body>
+        <header>
+            <img class = "logo-Fate" src="imagenes/iconofate.png" alt="Logo de fatee">
+            <h1 class="titulo1">Encriptador de Texto</h1>
+        </header>
+    <main class = "fonts">
+        <section class ="section1">
+           <textarea class = "texto-area" placeholder="Ingrese su texto aquí"></textarea>
+             <div class = "botones">
+                <input type="button" class="btn-encriptar" value="Encriptar">
+                <input type="button" class="btn-desencriptar" value="Desencriptar">
+             </div>
+             <div class="advertencia"><h2>🈲 Solo letras minúsculas y sin acentos 🈲</h2></div>
+        </section>
+        <section class="section2">
+            <div class ="contenedor-icono">
+                <img src="imagenes/archer.png" alt = "Icono de Archer" id = "iconoarcher">
+            </div>
+            <div class="contenedor-titulo3" id = "titulo-3">
+                <h3>Ningún mensaje fue encontrado</h3>
+            </div>
+            <div class ="contenedor-ingresa" id = "parra">
+                <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
+            <div class="contenedor-mensaje">
+                <h3 class = "titulo-mensaje" id = "listomensaje">🔒 Listo su mensaje 🔒 </h3>
+                <p class = "textoEncriptado" id = "resultadoencript"></p>
+            </div>
+            <div class="contenedor-copiar" id = "copiar">
+                <input type="button" class="btn-copiar" value="Copiar">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="credits">Desarrolado por CesarGarcia</p>
+    </footer>
+    <script src = "script.js"></script>
+</body>
+</html>
